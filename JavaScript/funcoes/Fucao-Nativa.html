@@ -1,0 +1,83 @@
+<script>
+/*
+Funções nativas em JavaScript
+Uma função nativa em JavaScript é uma função incorporada que já está disponível na linguagem JavaScript sem a necessidade de criar ou importar qualquer biblioteca adicional.
+ 
+Essas funções são parte do núcleo da linguagem e podem ser usadas diretamente em seu código sem a necessidade de defini-las previamente.
+*/
+
+let texto = ' aula javascript';
+let texto2 = '         aula javascript';
+// |A|u|l|a| |j|a|v|a|s|c |r |i |p |t |
+// |0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|
+
+console.log(texto.length); // cumprimento de uma string
+
+console.log(texto.charAt(5)); // Ele retorna com o caracter indicado.
+
+console.log(texto.indexOf('r')); // Ele mostra em que posição está o caracter.
+
+console.log(texto.replace('javascript','culinaria')); // Ele faz substituicoes.
+
+console.log(texto.substring(0,3)); // Ele retorna de acordo com indice inicial e retorna com quantos blocos para dar sequencia.
+
+console.log(texto.toLocaleUpperCase()); // Ele converte a string para maiusculo.
+
+console.log(texto.toLocaleLowerCase()); // Ele converte a string para minusculo.
+
+console.log(texto2.trim()); // Ele remove os espaços da string
+
+
+let numero = 10.35978;
+console.log(numero);
+console.log(Math.ceil(numero)); // Ele arredonda um valor para cima
+console.log(Math.floor(numero)); // Ele arredonda um valor para baixo
+
+console.log(Math.round(10.5)); // Arrendonda a partir do 0,5 para cima e de 0,4 para baixo
+console.log(Math.round(10.4));
+
+// ----------------------------------------------------------------------
+
+let numeroAleatorio = Math.random();
+console.log(numeroAleatorio);
+console.log(Math.round(numeroAleatorio)); // Ele gerar um numero aleatorio e depois arredonda.
+
+
+let numeroAleatorio2 = Math.random()*10;
+    numeroAleatorio2 = Math.round(numeroAleatorio2);
+    console.log('Aleatorio entre 0 e 10: '+ numeroAleatorio2);
+
+
+let data = new Date();
+console.log(data);
+console.log('Dia semana:' + data.getDay()); //
+console.log('Dia semana:' + data.getDate()); //
+console.log('Mes: ' + data.getMonth()); //
+console.log('Mes: ' + (data.getMonth()+1)); //
+
+console.log('Ano: ' + data.getFullYear()); // Ele traz o ano
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

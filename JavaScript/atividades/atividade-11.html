@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        document.write("<h1><font color = 'blue'>Resultado</font><br></h1>")
+
+        let pergunta_01 = parseInt(prompt ("Qual é o nome do famoso encanador que é o protagonista da série de jogos 'Super Mario'? \n 1) Luigi \n 2) Wario \n 3) Mario \n 4) Toad")); 
+
+        let resposta_01 = 0;
+
+
+        if ( pergunta_01 === 3) {
+              resposta_01 = 1;
+        } else {
+              resposta_01 = 0;
+        }
+
+        document.write("Pergunta - 01<br>Qual é o nome do famoso encanador que é o protagonista da série de jogos 'Super Mario'? <br> Alternativa correta: <font color = 'blue'> 3</font> <br> Sua resposta: " + pergunta_01 + "<br><hr>");
+        
+        let pergunta_02 = parseInt(prompt("Em qual jogo você controla um personagem chamado Link para resgatar a princesa Zelda? \n 1) Final Fantasy \n 2) The Legend of Zelda \n 3) Dark Souls \n 4) Metroid"));
+
+        let resposta_02 = 0 ;
+
+        if ( pergunta_02 === 2 ) {
+            resposta_02 = 1;
+        } else {
+            resposta_02 = 0;
+        }
+
+        document.write("Pergunta_02 <br>Em qual jogo você controla um personagem chamado Link para resgatar a princesa Zelda?<br>Alternativa correta:<font color 'blue'> 2 </font><br> Sua resposta: " + pergunta_02 +"<br><hr>");
+
+        let pergunta_03 = parseInt(prompt("Qual jogo é conhecido por sua frase icônica 'It's dangerous to go alone! Take this.'? \n 1) Pokémon \n 2) The Legend of Zelda \n 3) Castlevania \n 4) Mega Man "));
+
+        let resposta_03 = 0 ;
+
+        if ( pergunta_03 === 2 ) {
+            resposta_03 = 1;
+        } else {
+            resposta_03 = 0;
+        }
+
+        document.write("Qual jogo é conhecido por sua frase icônica 'It's dangerous to go alone! Take this.' <br>Alternativa correta:<font color 'blue'> 2</font> <br> Sua resposta: " + pergunta_03 +"<br><hr>");
+
+        let pergunta_04 = parseInt(prompt("Qual é o nome do famoso jogo de tiro em primeira pessoa da série 'Call of Duty' ambientado na Segunda Guerra Mundial  \n 1) Call of Duty: Modern Warfare \n 2) Call of Duty: World at War \n 3) Call of Duty: Black Ops \n 4) Call of Duty: Infinite Warfare"));
+
+        let resposta_04 = 0 ;
+
+        if ( pergunta_04 === 2 ) {
+            resposta_04 = 1;
+        } else {
+            resposta_04 = 0;
+        }
+
+        document.write("Qual é o nome do famoso jogo de tiro em primeira pessoa da série 'Call of Duty' ambientado na Segunda Guerra Mundial? <br> Alternativa correta:<font color 'blue'> 2</font> <br>Sua resposta: "+ pergunta_04 +"<br><hr>");
+
+        let pergunta_05 = parseInt(prompt("Em 'Minecraft', qual é o material necessário para criar uma picareta de diamante? \n 1) Pedra \n 2) Ferro \n 3) Madeira \n 4) Diamante"));
+
+        let resposta_05 = 0 ;
+
+        if ( pergunta_05 === 4 ) {
+            resposta_05 = 1;
+        } else {
+            resposta_05 = 0;
+        }
+
+        document.write("Em 'Minecraft', qual é o material necessário para criar uma picareta de diamante? <br> Alternativa correta:<font color 'blue'> 4</font> <br> Sua resposta: " + pergunta_05+"<br><hr>")
+;
+        let pontos = resposta_01 + resposta_02 + resposta_03 + resposta_04 + resposta_05;
+
+        document.write('<br>pontos: ' , pontos);
+    </script>
+</body>
+</html>

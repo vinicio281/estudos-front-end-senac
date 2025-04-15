@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+ 
+ 
+    <style>
+        #relogio02 {
+            font-size: 30px;
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 20px;
+            width: 500px;
+            height: 200px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+            text-align: center;
+            margin: auto;
+            background-color: orange;
+           
+        }
+ 
+ 
+        #horario {
+            display: inline-flex;
+            font-size: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            font-weight: bold;
+            margin-left: 570px;
+            margin-top: -150px;
+ 
+ 
+        }
+ 
+        #horas {
+          
+          background-color: rgb(0, 0, 0);
+          box-shadow: 3px 3px 3px inset gray;
+          padding: 10px;
+          border-radius: 20px;
+          color: white
+        }
+ 
+        #minutos {
+          background-color: rgb(0, 0, 0);
+          box-shadow: 3px 3px 3px inset gray;
+          padding: 10px;
+          border-radius: 20px;
+          color: white
+        }
+ 
+        #segundos {
+          background-color: rgb(0, 0, 0);
+          box-shadow: 3px 3px 3px inset gray;
+          padding: 10px;
+          border-radius: 20px;
+          color: white
+        }
+
+        #horario div{
+            border-bottom: solid white 5px;
+        }
+ 
+    </style>
+ 
+ 
+    <div id="relogio02">
+        <div id="data">
+            <span id="dia"></span>
+            <span id="mes-ano"></span>
+        </div>
+        </div>
+ 
+        <div id="horario">
+            <div id="horas"></div>
+            <span id="separador">:</span>
+            <div id="minutos"></div>
+            <span id="separador">:</span>
+            <div id="segundos"></div>
+        </div>
+ 
+ 
+    <script>
+        function atualizarRelogio() {
+            const horas = document.getElementById('horas');
+            const minutos = document.getElementById('minutos');
+            const segundos = document.getElementById('segundos');
+            const dia = document.getElementById('dia');
+            const mesAno = document.getElementById('mes-ano');
+ 
+            const tempo = new Date();
+            let h = tempo.getHours();
+            let m = tempo.getMinutes();
+            let s = tempo.getSeconds();
+            const diasDaSemana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+            const mesesDoAno = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+            let d = tempo.getDate();
+            let mo = tempo.getMonth();
+            let a = tempo.getFullYear();
+ 
+            if (h < 10) h = '0' + h;
+            if (m < 10) m = '0' + m;
+            if (s < 10) s = '0' + s;
+            if (d < 10) d = '0' + d;
+ 
+            horas.textContent = h;
+            minutos.textContent = m;
+            segundos.textContent = s;
+            dia.textContent = `${diasDaSemana[tempo.getDay()]}, ${d}`;
+            mesAno.textContent = `de ${mesesDoAno[mo]} de ${a}`;
+        }
+ 
+        setInterval(atualizarRelogio, 1000);
+        atualizarRelogio();
+ 
+    </script>
+ 
+    </div>
+ 
+    <script>
+        const horas = document.getElementById("horas");
+        const minutos = document.getElementById("minutos");
+        const segundos = document.getElementById("segundos");
+ 
+ 
+        // aplicando o intervalo para o relogio funcionar
+        const relogio = setInterval(function time() {
+ 
+            let tempo = new Date();
+            let h = tempo.getHours();
+            let m = tempo.getMinutes();
+            let s = tempo.getSeconds();
+ 
+            if (h < 10) h = '0' + h;
+            if (m < 10) m = '0' + m;
+            if (s < 10) s = '0' + s;
+ 
+            horas.textContent = h;
+            minutos.textContent = m;
+            segundos.textContent = s;
+ 
+        })
+ 
+ 
+    </script>
+</body>
+ 
+</html>

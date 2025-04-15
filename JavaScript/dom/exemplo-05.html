@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // criar e adicionar um novo parágrafo
+
+        for (let i = 1; i <= 30; i++){
+            // cria um novo elemento <p> (um parágrafo)
+            let novoParagrafo = document.createElement("p");
+
+            // define o texto do novo parágrafo
+            novoParagrafo.textContent = "este é o parágrafo número" + i;
+
+            // appendChild adiciona o novo parágrafo dentro do <body>
+            // é como adicionar uma nova peça ao final de uma fila
+            document.body.appendChild(novoParagrafo);
+
+            
+
+        }
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

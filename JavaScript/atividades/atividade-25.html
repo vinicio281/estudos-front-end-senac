@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Manipulação de Evento de Teclado </p>
+    <p>Precione Enter</p>
+<script>
+    document.onkeydown = function (event) {
+        if (event.key === "Enter") {
+            document.write("voce pressionou Enter");
+        }
+    };
+</script>
+<hr><br>
+ 
+<p>Precione (F) por um tempo e solte para ação</p>
+ 
+<script>
+    document.onkeyup = function (event) {
+        if(event.key === "space") {
+            document.write("voce soltou a tecla (espaço))");
+        }
+    };
+</script>
+<br><hr>
+ 
+<p>Precione qualquer outra tecla e acione o 1 evento</p>
+ 
+<script>
+    document.onkeypress = function (event) {
+        document.write("voce digitou a letra: " + event.key);
+    };
+ 
+</script>
+    
+</body>
+</html>

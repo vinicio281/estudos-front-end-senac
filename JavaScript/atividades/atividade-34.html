@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 280px;
+        }
+
+        input {
+            width: 280px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        #salvar{
+            margin-right: 295px;
+            width: 70%;
+            /* height: 8px; */
+            background-color: white;
+            color: black;
+        }
+
+        #corpo {
+            text-align: center;
+
+        }
+
+        #barras {
+            text-align: left;
+        }
+
+        img {
+            width: 200px;
+            margin-left: 55px;
+
+        }
+
+        .flex{
+            display: flex;
+        }
+
+
+    </style>
+
+    <div id="corpo">
+        <h2>Formulário de Login</h2>
+
+
+        <form action="#" name="formulario de login">
+
+
+            <div id="barras">
+
+                <label for="foto">
+                    <img src="../atividades/icone.img/depositphotos_251916955-stock-illustration-user-glyph-color-icon.jpg"
+                        alt="Ícone de Foto" class="icone">
+                </label>
+
+
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username"><br>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha"><br><br>
+            </div>
+
+            <button type="submit">Login</button>
+
+            
+
+            <div class="flex">
+                <input type="checkbox">
+                <button id="salvar" type="salvar">Salvardados</button>
+    
+            </div>
+
+
+        </form>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

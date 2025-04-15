@@ -1,0 +1,41 @@
+body{
+    background: #d2d2d2 url('Imagens/fundo.png');
+    font: 16px Arial, Helvetica, sans-serif;
+}
+
+#principal{
+    width: 900px;
+    margin: 0 auto; /* centralizar o conteudo no centro da horizontal */
+}
+
+#menu{
+    background: #eee9c7;
+    padding: 18px;
+}
+
+#conteudo{
+    background: #ffffff;
+    padding: 15px;
+    text-align: justify;
+}
+
+h1{
+    color: #dd423e;
+    font-family: Cambria, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#rodape{
+    text-align: center;
+}
+
+a{
+    color: #4b566a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #dd423e;
+}

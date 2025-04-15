@@ -1,0 +1,77 @@
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+
+    /* Centralizar o conteúdo na tela */
+    display: flex;
+    /* Usa flexbox para layout  */
+    justify-content: center;
+    /* Centraliza horizontalmente  */
+    align-items: center;
+    /* Centraliza verticalmente  */
+
+
+
+    /* Define a altura da tela para 100% da altura da janela    */
+    height: 100vh;
+    /* O corpo ocupa toda a altura visível da tela   */
+    margin: 0;
+    /* Remove a margem padrão da página   */
+
+
+    /*Estilo do formuário   */
+    form {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #1212121a;
+        width: 300px;
+    }
+
+
+    /* Estilo dos labels  */
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+
+    /* Estilo dos campos de entrada */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        /* faz com que o tamanho de um elemento inclua padding e bordas, mantendo a largura e altura total como você definiu */
+        box-sizing: border-box;
+    }
+
+
+    /* Estilo do botão de enviar */
+    input[type="submit"]{
+        width: 100%;
+        padding: 10px;
+        background-color: #591ac5;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    /* Estilo da mensagem de erro */
+    #mensagemErro{
+        color: #ff0000;
+        font-size: 12px;
+    }
+
+
+
+
+
+}

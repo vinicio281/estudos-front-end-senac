@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <td>nome</td>
+            <td id="nome"></td>
+
+        </tr>
+
+        <tr>
+            <td>email</td>
+            <td id="email"></td>
+
+        </tr>
+
+        <tr>
+            <td>telefone</td>
+            <td id="telefone"></td>
+
+        </tr>
+
+        <table>
+            <script>
+
+                
+        let nome = document.getElementById("nome");
+        nome.textContent = prompt("digite seu nome")
+
+        let email = document.getElementById("email");
+        email.textContent = prompt("digite seu email")
+
+        let telefone = document.getElementById("telefone");
+        telefone.textContent = prompt("digite seu telefone")
+
+
+            </script>
+
+            <button onclick="window.print()">imprimir</button>
+
+        </table>
+
+    </table>
+    
+</body>
+</html>

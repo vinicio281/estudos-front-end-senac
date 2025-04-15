@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+
+#relogio02{
+display: flex;
+font-size: 70px;
+font-weight: bold;
+border: 1px solid black;
+padding: 20px;
+width: 290px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+border-radius: 20px;
+
+
+
+}
+
+#display{
+    background-color: rgb(194, 194, 202);
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+</style>
+
+
+    <div id="relogio02">
+
+        <div id="display">
+        <div id="horas"> </div>
+        </div>
+
+        <span id= "separador"> : </span>
+
+        <div id="display">
+        <div id="minutos"> </div>
+        </div>
+
+        <span id="separador"> : </span>
+
+        <div id="display">
+        <div id="segundos"> </div>
+        </div>
+
+    </div>
+
+    <script>
+        const horas = document.getElementById("horas");
+        const minutos = document.getElementById("minutos");
+        const segundos = document.getElementById("segundos");
+
+
+        // aplicando o intervalo para o relogio funcionar
+        const relogio = setInterval(function time () {
+
+        let tempo = new Date();
+        let h = tempo.getHours();
+        let m = tempo.getMinutes();
+        let s = tempo.getSeconds();
+
+        if (h < 10) h = '0' + h;
+        if (m < 10) m = '0' + m;
+        if (s < 10) s = '0' + s;
+
+        horas.textContent = h;
+        minutos.textContent = m;
+        segundos.textContent = s;
+
+        })
+
+
+    </script>
+
+    
+</body>
+</html>
